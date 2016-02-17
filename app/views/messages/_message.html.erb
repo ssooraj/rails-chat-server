@@ -1,3 +1,17 @@
 <div class="message">
-	<p> <%= message.content %> </p>
+  <ul id='messages-list'>
+    <li class='messages-list-item'>
+      <div class='messages-list-item-name'>
+        <%= message.user.uid %>:
+
+        <div class='messages-list-item-timestamp'>
+          (<%= l message.created_at, format: :short %>)
+        </div>
+      </div>
+      <div class='messages-list-item-body'>
+        <%= message.content %>
+
+      </div>
+    </li>
+  </ul>
 </div>
