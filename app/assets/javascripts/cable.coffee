@@ -8,4 +8,4 @@
 #= require_tree ./channels
 #
 @App ||= {}
-App.cable = ActionCable.createConsumer('wss://rails-chat-app.herokuapp.com');
+App.cable = ActionCable.createConsumer();
